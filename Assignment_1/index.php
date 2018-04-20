@@ -25,8 +25,9 @@
     <div class="container">
         <div class="jumbotron">
             <h1>Computer History Museum</h1>
-            <p> Welcome to the computer histor musemum of Boston.
-             We feature old technolgoy from BBN and MIT.</p>
+            <p> Welcome to the computer history museum that chronicles the role of historic companies such as Bolt, Baranick, and Neuman (BBN)
+            and Universities such as MIT and Boston University in the development of computer technology.
+             </p>
         </div>
     </div>
 </body>

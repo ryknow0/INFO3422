@@ -1,0 +1,11 @@
+<div *ngIf="hero"> <!--binding the hero detail component to the hero property-->
+<h2>{{hero.name | uppercase}} Details</h2> <!-- hero references a property in the class heroes.component.ts-->
+<div> <span>id: </span>{{hero.id}}</div>
+<div> 
+  <label>name: 
+    <input [(ngModel)] ="hero.name" placeholder="name"> <!-- allows two way binding of heroes name-->
+  </label>
+</div>
+<button (click)="goBack()">go back</button>
+<button (click)="save()">save</button>
+</div>

@@ -1,0 +1,58 @@
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+#logo {
+    float: left;
+    margin: 0px 20px 0px 0px;
+}
+
+labe.valid {
+    width: 24px;
+    height: 24px;
+    background: url(../images/valid.png) center center no-repeat;
+    display: inline-block;
+    text-indent: -9999px;
+}
+
+label.error {
+    font-weight: bold;
+    color: rgba(255, 21, 21, 0.91);
+    padding: 0px 14px;
+    margin-top: -1px;
+}
+
+.form-login {
+    width: 250px;
+    padding: 20px 20px 20px 20px;
+}
+
+#login-error {
+    display: none;
+    color: red;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* all*/
+
+::-webkit-input-placeholder {
+    color: #f00;
+}
+
+::-moz-placeholder {
+    color: #f00
+}
+
+/* firefox 19+ */
+
+:-ms-input-placeholder {
+    color: #f00;
+}
+
+/* ie */
+
+input:-moz-placeholder {
+    color: #f00;
+}

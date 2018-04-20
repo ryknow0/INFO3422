@@ -1,0 +1,10 @@
+/* Div with ID of weather*/
+/* When the jQuery runs it will change weather display value to block to show the data afer it has been gathered*
+/*this can also be done with bootstrap using their inline class="hidden" and use jQuery/javascript to add remove the class*/
+#weather{
+    display:none;
+
+}
+.label{
+    font-weight: bold;
+}

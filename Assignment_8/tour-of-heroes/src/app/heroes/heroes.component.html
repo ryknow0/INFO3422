@@ -1,0 +1,43 @@
+<!--Heroes component template-->
+<h2>My Heroes</h2>
+<!--<ul class="heroes"> -->
+  <!--Angular's repeater directive  -->
+  <!--<li *ngFor="let hero of heroes" [class.selected]="hero === selectedHero" (click)="onSelect (hero)"></li>-->
+ <!--(for loop) repeats the host element for each element in the heroes variable -->
+    <!--CSS class .select allows you to add styling to an element under certain conditions -->
+  <!--  <span class="badge">{{hero.id}}</span> {{hero.name}}
+  </li>
+</ul>
+<h2>My Heroes</h2> -->
+<div>
+    <label>Hero name:
+      <input #heroName />
+    </label>
+    <!-- (click) passes input value to add() and then clears the input -->
+    <button (click)="add(heroName.value); heroName.value=''">
+      add
+    </button>
+   </div>
+<ul class="heroes">
+    <li *ngFor="let hero of heroes">
+        <a routerLink="/detail/{{hero.id}}">
+          <span class="badge">{{hero.id}}</span> {{hero.name}}
+        </a>
+        <button class="delete" title="delete hero" (click)="delete(hero)">x</button>
+    </li>
+</ul>
+      
+ 
+<!-- binds selectedHero to the hero property this is a one way property binding
+from the selectedHero property of the HeroesComponent to the hero property of the target elemetent (HeroDetailComponent)
+-->
+<!--<app-hero-detail [hero]="selectedHero"></app-hero-detail>-->
+<div *ngIf="selectedHero"> <!--binding the hero detail component to the hero property-->
+  <h2>{{selectedHero.name | uppercase}} Details</h2> <!-- hero references a property in the class heroes.component.ts-->
+  <div> <span>id: </span>{{selectedHero.id}}</div>
+  <div> 
+    <label>name: 
+      <input [(ngModel)] ="selectedHero.name" placeholder="name"> <!-- allows two way binding of heroes name-->
+    </label>
+  </div>
+  </div>

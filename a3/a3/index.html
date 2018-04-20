@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Weather and Space Gurus -DMM</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <h1 class="card-header">Welcome Weather + Space Gurus-DMM</h1>
+            <div class="card-body">
+                <div id="space">
+                    <div id="apod-access-date"></div>
+                    <img id="apod-image" src='' />
+                    <div id="apod-title"></div>
+                    <div id="apod-explanation"></div>
+                </div>
+                <button id="nasabutton" class="btn btn-primary">Get space image</button>
+            </div>
+            <div class="card-body">
+                <input type="text" name="zip" id="zip" placeholder="Enter zip code">
+                <button id="weatherbutton" class="btn btn-primary">Get weather</button>
+                <div id="weather">
+                    City Name:
+                    <div id="city_name"></div>
+                    Temperature:
+                    <div id="temperature"></div>
+                    Pressure:
+                    <div id="pressure"></div>
+                    Humidity:
+                    <div id="humidity"></div>
+                    Wind Speed:
+                    <div id="wind_speed"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+    <script src="app-index.js"></script>
+</body>
+
+</html>

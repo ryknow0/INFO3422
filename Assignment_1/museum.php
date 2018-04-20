@@ -25,7 +25,8 @@
     <div class="container">
         <h1>Image Gallery</h1>
         <h1>Image Gallery</h1>
-        <!-- Div to setup row -->
+        <!-- Div to setup row copy to create 4 rows-->
+        <!-- Row 1 -->
         <div class="row">
             <div class="col-md-4"> 
                 <a href="computerphotos\1970sComputer.jpg">
@@ -35,11 +36,38 @@
                 <img class="thumbnail" src="computerphotos\1972hp35.jpg" width="150" height="150" /></a>
             </div>
             <div class="col-md-4">
-  <a href="computerphotos\1977Apple.jpg">
-   <img class="thumbnail" src="computerphotos\1977Apple.jpg" width="150" height="150" /></a>
-</div>
-</div>
-
+                <a href="computerphotos\1977Apple.jpg">
+                <img class="thumbnail" src="computerphotos\1977Apple.jpg" width="150" height="150" /></a>
+            </div>
+        </div>
+        <!-- Row 2 -->
+        <div class="row">
+            <div class="col-md-4"> 
+                <a href="computerphotos\1979Atari.jpg">
+                <img class="thumbnail" src="computerphotos\1979Atari.jpg" width="150" height="150" /></a></div>
+            <div class="col-md-4">
+                <a href="computerphotos\1982Commodore64.jpg">
+                <img class="thumbnail" src="computerphotos\1982Commodore64.jpg" width="150" height="150" /></a>
+            </div>
+            <div class="col-md-4">
+                <a href="computerphotos\ibmpc.jpg">
+                <img class="thumbnail" src="computerphotos\ibmpc.jpg" width="150" height="150" /></a>
+            </div>
+        </div>
+        <!-- Row 3 -->
+        <div class="row">
+            <div class="col-md-4"> 
+                <a href="computerphotos\1991Linus.jpg">
+                <img class="thumbnail" src="computerphotos\1991Linus.jpg" width="150" height="150" /></a></div>
+            <div class="col-md-4">
+                <a href="computerphotos\1993Mosaic.jpg">
+                <img class="thumbnail" src="computerphotos\1993Mosaic.jpg" width="150" height="150" /></a>
+            </div>
+            <div class="col-md-4">
+                <a href="computerphotos\1994Yahoo.jpg">
+                <img class="thumbnail" src="computerphotos\1994Yahoo.jpg" width="150" height="150" /></a>
+            </div>
+        </div>
     </div>
 </body>
 </html>

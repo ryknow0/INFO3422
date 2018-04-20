@@ -1,0 +1,62 @@
+
+
+<!--API Key Open Weather Map-->
+<!--4c604ce7c6e721e66cdbd9ad538dfaa3-->
+<!--api.openweathermap.org/data/2.5/weather?zip=20175,us&appid=4c604ce7c6e721e66cdbd9ad538dfaa3-->
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather and Space Gurus - RDC</title>
+    <!-- Adds Bootstrap Binaries-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <!-- Font- Awesome-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css"><!-- Link CSS styleshee-->
+</head>
+<body>
+    <!--Using Bootsrap container/card/card-header/card-body styling-->
+    <div class="container">
+        <div class="card">
+            <h1 class="card-header">Welcome Weather + Space Gurus - RDC</h1>
+            <!-- Grabs the NASA API-->
+            <div class ="card-body">
+                 <div id="space">
+                    <div id="apod-access-date"></div>  
+                    <img id="apod-image" src=''/>
+                    <div id="apod-title"></div>
+                    <div id="apod-explanation"></div>
+                </div>
+                <button id="nasabutton" class="btn btn-primary">Get space image</button>
+                <button id="clearnasabutton" class="btn btn-primary">Clear image</button>
+            </div>
+            <!--Get Weather based off zipcode-->
+            <div class="card-body">
+                <!--Text box to take zipcode from user-->
+                <input type="text" name="zip" id="zip" placeholder="Enter zip code">
+                <button id="weatherbutton" class="btn btn-primary">Get weather</button>
+                <button id="clearweatherbutton" class="btn btn-primary">Clear weather</button>
+                <div id="weather">
+                   <span class="label">City Name:</span><span id="city_name"></span><br/>
+                    <span class="label">Temperature:</span> <span id="temperature"></span><br/>
+                    <span class="label">Pressure:</span> <span id="pressure"></span><br/>
+                    <span class="label">Humidity: <span id="humidity"></span></span><br/>
+                    <span class="label">Wind Speed: <span id="wind_speed"><span></span><br/>
+                </div>
+            </div>
+        </div>
+    
+
+    </div><!-- Main Closing dive-->
+    <!--Includes JQuery binaries -->
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <!--Adds Poper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+    <!--Adds  bootstrap Javascript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+    <!--links javascript written for this page-->
+    <!--It is important that our written js script link is listed after jQuery b/c our js actually uses jQuery--> 
+    <script src="app-index.js"></script>   
+</body>
+</html>

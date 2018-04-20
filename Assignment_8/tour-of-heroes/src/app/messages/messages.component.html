@@ -1,0 +1,11 @@
+
+<!-- template binds directly to the components messageService-->
+<div *ngIf="messageService.messages.length">
+  <!--  *ngIf only displays teh messages area if there are messages to show -->
+  <h2>Messages</h2>
+  <button class="clear" 
+          (click)="messageService.clear()">clear</button> <!-- angular evetn binding binds the buttons click event to messageService.clear() -->
+  <div *ngFor='let message of messageService.messages'> {{message}} </div>
+ <!-- ^^ *ngFor presents the list of messages in repeated div elements -->
+ </div>
+ 
